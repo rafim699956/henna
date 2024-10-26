@@ -1,0 +1,132 @@
+@import"../variable/variable";
+
+.testimonial-content {
+    h3 {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+
+        &::before {
+            position: absolute;
+            content: '\201F';
+            left: 0;
+            top: -10px;
+            z-index: 9;
+        }
+    }
+
+    p {
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background-color: $olive;
+
+        }
+    }
+}
+
+.testimonial2 {
+    .test2-content {
+        h2 {
+            font-size: 2.188rem;
+            line-height: 2.188rem;
+        }
+    }
+}
+
+.artist2-dec {
+    span {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        line-height: 1.524rem;
+    }
+
+}
+
+
+@include media-breakpoint-up(lg) {
+    .testimonial-content {
+        width: 50%;
+
+        h3 {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .testimonial-img {
+        width: 50%;
+    }
+
+    .testimonial2 {
+        .test2-content {
+            width: 20.938rem;
+
+            h2 {
+                font-size: 5rem;
+                line-height: 5rem;
+                letter-spacing: -0.03em;
+                font-family: "Cinzel", serif;
+            }
+        }
+
+        .test2-overlay {
+            width: 21.563rem;
+            margin-left: -80px;
+
+            p {
+                font-size: 40px;
+                line-height: 40px;
+                font-family: "Cinzel", serif;
+
+                &::before {
+                    position: absolute;
+                    content: '“';
+                    left: 0;
+                    top: 0;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: #ffffff;
+
+                }
+            }
+        }
+
+        .artist2-dec {
+            width: 16.875rem;
+
+            h4 {
+                margin-right: -15rem;
+                margin-right: min(-11rem, 10vw);
+            }
+        }
+
+        .artist2-img {
+            a {
+                max-width: 19.875rem;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .testimonial-img {
+        img {
+            max-width: 50% !important;
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .artist2-dec {
+        a{
+            padding-inline: 20px;
+        }
+    }
+}

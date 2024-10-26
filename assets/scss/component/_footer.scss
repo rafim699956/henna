@@ -1,0 +1,57 @@
+@import"../variable/variable";
+
+.footer {
+    p{
+        color: $black300;
+    }
+    .footer-title {
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2.022rem;
+            font-family: "Cinzel", serif;
+        }
+    }
+
+    .footer-left {
+        h3 {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            font-family: "Cinzel", serif;
+        }
+    }
+
+    .footer-contact {
+        .footer-address {
+            width: 12.5rem;
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .footer {
+
+        .footer-left,
+        .footer-right {
+            width: 50%;
+        }
+
+        .footer-left {
+            h3 {
+                font-size: 2.5rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .footer {
+        .footer-nav {
+            ul {
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

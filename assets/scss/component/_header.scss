@@ -1,0 +1,66 @@
+@import"../variable/variable";
+/*============================
+        header part start
+==============================*/ 
+.navbar {
+    border-bottom: 1px solid $disabled;
+
+    &:has(.is-active) {
+        border: none;
+    }
+    .navbar-brand{
+        font-family: "Cinzel", serif;
+        font-size: 1.5rem;
+        line-height: 2.022rem;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:focus-visible {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.hamburger .line {
+    width: 44px;
+    height: 5px;
+    background-color: rgba(48, 50, 54, 1);
+    display: block;
+    margin-left: auto;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        width: 35px;
+    }
+}
+
+#hamburger-1.is-active .line {
+    &:nth-child(1) {
+        transform: translateY(14.5px) rotate(45deg);
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        opacity: 0;
+    }
+
+    &:nth-child(4) {
+        transform: translateY(-14.5px) rotate(-45deg);
+    }
+}
+
+
+@media only screen and (max-width:991px){
+    .navbar-collapse{
+        overflow-y: scroll;
+    }
+}
+/*============================
+        header part start
+==============================*/ 

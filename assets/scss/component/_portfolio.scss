@@ -1,0 +1,16 @@
+.port-left {
+    .overlay {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(2px);
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .port-left {
+        width: 100% !important;
+    }
+
+    .port-right {
+        width: 100% !important;
+    }
+}

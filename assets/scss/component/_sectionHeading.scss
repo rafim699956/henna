@@ -1,0 +1,17 @@
+@import'../variable/variable';
+
+.section-heading {
+    h2 {
+        font-size: 3.75rem;
+        line-height: 3.75rem;
+        font-family: "Cinzel", serif;
+    }
+}
+@include media-breakpoint-down(lg) { 
+    .section-heading{
+        h2{
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+        }
+    }
+}

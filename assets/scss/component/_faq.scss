@@ -1,0 +1,29 @@
+@import"../variable/variable";
+
+.accordion-item {
+    border-bottom: none;
+}
+
+.accordion-header {
+    .accordion-button {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        font-family: "Cinzel", serif;
+    }   
+}
+
+@include media-breakpoint-up(lg) {
+    .accordion-item {
+        border-bottom: 1px solid $disabled;
+    }
+
+    .accordion-header {
+        .accordion-button {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .accordion-button.collapsed {
+            padding-bottom: 2.5rem !important;
+        }
+    }
+}

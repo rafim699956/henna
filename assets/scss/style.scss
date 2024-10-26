@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+// import custom variable
+@import "../../assets/scss/variable/variable";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/component/button";
+@import "../scss/component/header";
+@import "../scss/component/sectionHeading";
+@import "../scss/component/hero";
+@import "../scss/component/portfolio";
+@import "../scss/component/testimonial";
+@import "../scss/component/service";
+@import "../scss/component/appoinment";
+@import "../scss/component/location";
+@import "../scss/component/faq";
+@import "../scss/component/footer";

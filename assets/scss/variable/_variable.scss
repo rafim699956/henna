@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@import"../../../node_modules/bootstrap/scss/variables";
+// font family
+$font-family-base:"Montserrat",
+sans-serif;
+$font-weight-base:400;
+$line-height-base:1.219;
+// colors
+$primary:rgba(56, 53, 51, 1);
+$secondary: rgba(65, 60, 59, 1);
+$olive:rgba(161, 189, 116, 1);
+$light: rgba(65, 60, 59, 1);
+$blackAlpha300:rgba(0, 0, 0, 1);
+$disabled:rgba(205, 205, 205, 1);
+$body-color:$primary;
+$button-black:rgba(15, 15, 15, 1);
+$black100:rgba(0, 0, 0, 1);
+$black200:rgba(0, 0, 0, 0.2);
+$black300:rgba(65, 60, 59, 0.3);
+
+// theme colors
+$theme-colors: ("primary":$primary,
+    "secondary":$secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "dark": $dark,
+    "olive":$olive,
+    "blackAlpha300":$blackAlpha300,
+    "disabled":$disabled,
+    "btn-black":$button-black,
+    "black100":$black100,
+);
+
+// edit container max width
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1224px,
+);
+
+// spacing
+$spacers: (0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5:$spacer * .313,
+    6:$spacer * .375,
+    10:$spacer * .625,
+    12:$spacer * .75,
+    14:$spacer * .875,
+    20:$spacer * 1.25,
+    25:$spacer * 1.563,
+    30:$spacer * 1.875,
+    32:$spacer * 2,
+    33:$spacer * 2.063,
+    40:$spacer * 2.5,
+    50:$spacer * 3.125,
+    51:$spacer * 3.188,
+    55:$spacer * 3.438,
+    60:$spacer * 3.75,
+    70:$spacer * 4.375,
+    80:$spacer * 5,
+    81:$spacer * 5.063,
+    84:$spacer * 5.25,
+    85:$spacer * 5.313,
+    87:$spacer * 5.438,
+    144:$spacer * 9,
+    150:$spacer * 9.375,
+    177:$spacer * 11.063,
+    179:$spacer * 11.188,
+    183:$spacer * 11.438,
+    243:$spacer * 15.188,
+);
+
+// font-size
+$font-sizes: (1: $font-size-base,
+    2: $font-size-base * 1.25,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
+// btn
+$btn-color:rgba(255, 255, 255, 1);
+$btn-padding-y:1rem;
+$btn-padding-x:5.844rem;
+$btn-line-height:1.4rem;
+$btn-border-width:none;
+$btn-border-radius: none;
+$btn-link-color:black;
+
+// accordion
+// $accordion-button-icon:url(../../images/accordionsvg.svg);
+// $accordion-button-active-icon: url(../../images/accordionactivesvg.svg);
+$accordion-icon-active-color:$olive;
+$accordion-icon-color:$primary;
+$accordion-icon-width:3rem;
+$accordion-button-focus-box-shadow:none;
+$accordion-button-active-color:$olive;
+$accordion-button-active-bg:transparent;

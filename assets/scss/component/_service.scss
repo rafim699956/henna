@@ -1,0 +1,70 @@
+@import"../variable/variable";
+
+.service {
+    .nav-pills {
+        .nav-link {
+            color: $black100;
+        }
+
+        .nav-link.active {
+            color: $primary;
+        }
+    }
+
+    a {
+        border: 1px solid $primary;
+
+        &:hover {
+            border: 1px solid $primary;
+        }
+    }
+}
+
+.service-content {
+    .number {
+        h3 {
+            font-size: 5rem;
+            line-height: 5rem;
+            font-family: "Cinzel", serif;
+            letter-spacing: -0.03em;
+        }
+    }
+}
+
+.service-img {
+    img {
+        object-fit: cover;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+
+    .service-content,
+    .service-img {
+        width: 50%;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .service-content {
+        .number {
+            h3 {
+                font-size: 2.188rem;
+                line-height: 2.188rem;
+
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {
+    .service {
+        .nav {
+            .nav-item {
+                .nav-link {
+                    padding-inline: 0;
+                }
+            }
+        }
+    }
+}

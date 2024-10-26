@@ -1,0 +1,50 @@
+@import"../variable/variable";
+
+.appoinment {
+    background-color: rgba(0, 0, 0, 0.55);
+
+    h3 {
+        font-size: 3.75rem;
+        line-height: 3.75rem;
+        font-family: "Cinzel", serif;
+    }
+    h4{
+        font-size: 1.5rem;
+        line-height: 2.022rem;
+        font-family: "Cinzel", serif;
+    }
+
+    a {
+        line-height: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .appoinment-wrapper {
+        width: 42.188rem;
+        margin-inline: auto;
+    }
+
+    .appoinment-dec {
+        p {
+            width: 50%;
+        }
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .appoinment {
+        a {
+            padding-inline: 20px;
+        }
+
+        h3 {
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+        }
+        h4{
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+        }
+    }
+}

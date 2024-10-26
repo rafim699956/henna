@@ -1,0 +1,18 @@
+@import"../variable/variable";
+
+@include media-breakpoint-down(sm) {
+    .btn {
+        width: 100%;
+    }
+}
+
+.left-arrow{
+    width: 100px;
+    height: 100px;
+    border: 1px solid $disabled;
+}
+.right-arrow{
+    width: 100px;
+    height: 100px;
+    border: 1px solid $primary;
+}
